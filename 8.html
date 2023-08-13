@@ -1,0 +1,27 @@
+<H1>버튼과 JS기능</H1>
+
+
+<div id="result">0</div>
+
+<div>
+
+    <button onclick="number_inc()">+1</button>
+    <button onclick="number_dec()">-1</button>
+</div>
+
+<script>
+    function number_inc(){
+        result = document.getElementById('result');
+        number = parseInt(result.innerText, 10)+1;
+        result.innerText = number;
+    }
+
+    function number_dec(){
+        result = document.getElementById('result');
+        number = parseInt(result.innerText, 10) - 1;
+        result.innerText = number;
+    }
+
+
+
+</script>
